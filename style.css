@@ -1,0 +1,84 @@
+*{
+    
+    font-size: 1.5rem;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+}
+
+
+
+header{
+    background-image: url(./assets/img_header.jpg);
+    text-align:  center;
+    
+}
+
+h1{
+    color:rgb(10, 89, 199);
+    padding-top:  40px;
+    font-family: Honk;
+    font-size: 60px;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    display: inline;
+    padding-left:  100px;
+    padding-right: 100px;
+    font-family: Amatic SC;
+    color: #e21284;
+  }
+
+  a{
+    color: #e21284;
+    font-family: 'Monofett';
+    font-size: 30px;
+  }
+
+  body{
+    background-color: aquamarine;
+  }
+
+
+
+/*revisar los media porque los he copiado y por si hay que cambiar algun nombre o quitar algo que yo no tenga*/
+
+@media only screen and (min-width: 700px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="submit"],
+    select,
+    textarea {
+      width: 80%;
+      height: 45px;
+    }
+  
+    * {
+      font-size: 1.2rem;
+    }
+  
+    #main_picture {
+      width: 70%; 
+    }
+  
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="submit"],
+    select,
+    textarea {
+      width: 50%;
+    }
+  
+    * {
+      font-size: 1.6rem;
+    }
+  
+    #main_picture {
+      width: 45%; 
+    }
+  }
