@@ -1,29 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi primera web</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/cohete.png">
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Honk' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+
+
+
+
 </head>
+
 <body>
     <header>
-        <nav>
+        <h1>MI PRIMERA WEB</h1>
+
+        <nav class="nav_header">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-                <li><a href="./pages/media.html">Media</a></li>
+                <li><a href="../index.html" class="enlace_header">Home</a></li>
+                <li><a href="./biografia.html" class="enlace_header">biografia</a></li>
+                <li><a href="./portfolio.html" class="enlace_header">Portfolio</a></li>
+                <li><a href="#" class="enlace_header">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="main_form">
+
+        <h2 id="titulo_form">Suscríbete a nuestro Newsletter</h2>
+
+        <form>
+            <p class="text_form"><strong>- DATOS PERSONALES -</strong></p>
+
+            <label>Nombre:
+                <input name="firstName" />
+            </label>
+
+            <label>Apellidos:
+                <input name="lastName" />
+            </label>
+
+            <p class="text_form"> <strong>Género</strong></p>
+            <label><input type="radio" name="genero" value="masculino" />
+                Masculino
+            </label>
+            <label><input type="radio" name="genero" value="femenino" />
+                Femenino
+            </label>
+
+            <label>Email:
+                <input type="email" name="email" />
+            </label>
+
+            <label>Fecha nacimiento:
+                <input type="date" name="birthDate">
+            </label>
+
+            <label>
+                Dirección:
+                <br />
+                <textarea name="address" cols="30" rows="3">
+                </textarea>
+            </label>
+
+            <button type="submit">Submit</button>
+
+        </form>
 
     </main>
 
     <footer>
-
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com" class="lista_footer"><img src="../assets/instagram.png"
+                            alt="instagram" class="logo_redes">Instagram</a></li>
+                <li><a href="https://www.facebook.com" class="lista_footer"><img src="../assets/facebook.png"
+                            alt="facebook" class="logo_redes">Facebook</a></li>
+                <li><a href="https://www.privacypolicies.com" class="lista_footer"><img src="../assets/policia.png"
+                            alt="policia" class="logo_redes">Privacy Policy</a></li>
+            </ul>
+        </nav>
     </footer>
-    
-</body>
-</html>

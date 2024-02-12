@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Mi primera web</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/cohete.png">
     <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Honk' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+
 
 
 
 </head>
+
 <body>
     <header>
         <h1>MI PRIMERA WEB</h1>
 
-        <nav>
+        <nav class="nav_header">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./pages/biografia.html">biografia</a></li>
-                <li><a href="./pages/portfolio.html">Portfolio</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="#" class="enlace_header">Home</a></li>
+                <li><a href="./pages/biografia.html" class="enlace_header">biografia</a></li>
+                <li><a href="./pages/portfolio.html" class="enlace_header">Portfolio</a></li>
+                <li><a href="./pages/contacto.html" class="enlace_header">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div>  
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia distinctio illo a velit nisi. Consequuntur, sint! Dignissimos quia qui beatae magni eum quisquam iusto aliquam perspiciatis, corporis repellat cupiditate quibusdam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore hic maiores magni eius harum! Vel doloremque a ratione libero aperiam cupiditate minima doloribus quaerat quo, minus sapiente, neque, id magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repudiandae vel nemo quam id amet, cupiditate necessitatibus, modi totam recusandae earum similique nisi suscipit temporibus. Consectetur corrupti amet ullam explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt distinctio non cumque minus quasi, reiciendis vel, exercitationem velit voluptatum, possimus ad cupiditate corporis eaque dolor dolore beatae quidem voluptas nihil. </p>
+        <div class="contenedor">
+            <div><img src="./assets/biografia.JPG" alt="biografia" class="img_home"></div>
+            <div class="text_home"><a href="./pages/portfolio.html" class="enlace_main">
+                    <p> ¿Cual es tu historia? Conecta con esta biografía y sorpréndete</p>
+                </a></div>
+        </div>
+        <div class="contenedor2">
+            <div><img src="./assets/puerta_portfolio.jpg" alt="puerta" class="img_home2"></div>
+            <div class="text_home" id="text_home2"><a href="./pages/portfolio.html" class="enlace_main">
+                    <p>Atrévete a entrar en un caos de colores y sensaciones</p>
+                </a></div>
+        </div>
+        <div class="contenedor3">
+            <div><img src="./assets/contacto.jpg" alt="contacto" class="img_home2" id="img3"></div>
+            <div class="text_home"><a href="./pages/portfolio.html" class="enlace_main">
+                    <p>¿Te gusta lo que has visto? Suscríbete a nuestro Newsletter</p>
+                </a></div>
         </div>
     </main>
 
     <footer>
         <nav>
             <ul>
-                <li>Instagram</li>  <!-- PONER ICONO INSTA FACE CON ENLACE Y COPIAR A LAS OTRAS PAGINAS -->
-                <li>Facebook</li>
-                <li>Administrador de cookies</li>
-                <li>Opiniones</li>
-                <li>Privacy Policy</li>
-                <li>2024</li>
+                <li><a href="https://www.instagram.com" class="lista_footer"><img src="./assets/instagram.png"
+                            alt="instagram" class="logo_redes">Instagram</a></li>
+                <li><a href="https://www.facebook.com" class="lista_footer"><img src="./assets/facebook.png"
+                            alt="facebook" class="logo_redes">Facebook</a></li>
+                <li><a href="https://www.privacypolicies.com" class="lista_footer"><img src="./assets/policia.png"
+                            alt="policia" class="logo_redes">Privacy Policy</a></li>
             </ul>
         </nav>
     </footer>
-    
+
 </body>
+
 </html>
