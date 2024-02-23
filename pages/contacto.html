@@ -35,37 +35,63 @@
 
         <h2 id="titulo_form">Suscríbete a nuestro Newsletter</h2>
 
-        <form>
+        <form id="contactForm">
             <p class="text_form"><strong>- DATOS PERSONALES -</strong></p>
 
-            <label>Nombre:
-                <input name="firstName" />
-            </label>
+            <label name="fname">Nombre:</label>
+                <input  type="text"
+                id="fname"
+                name="fname"
+                placeholder="Introduce nombre..."
+                minlength="3"
+                maxlenght="30"
+                required/>
+            
 
-            <label>Apellidos:
-                <input name="lastName" />
-            </label>
+            <label name="lname">Apellidos:</label>
+                <input type="text"
+                id="lname"
+                name="lname"
+                placeholder="Introduce apellidos..."
+                minlength="3"
+                maxlenght="30"
+                required/>
+            
 
             <p class="text_form"> <strong>Género</strong></p>
-            <label><input type="radio" name="genero" value="masculino" />
+            <label for="genero"><input type="radio" name="genero" value="masculino" />
                 Masculino
             </label>
-            <label><input type="radio" name="genero" value="femenino" />
+            <label for="genero"><input type="radio" name="genero" value="femenino" />
                 Femenino
             </label>
 
-            <label>Email:
-                <input type="email" name="email" />
+            <label for="email">Email:
+                <input type="email"
+                id="email"
+                name="email"
+                placeholder="Introduce email..."
+                required/>
             </label>
 
-            <label>Fecha nacimiento:
-                <input type="date" name="birthDate">
-            </label>
+            <label for="tlf">Teléfono:</label>
+            <input
+                type="tel"
+                id="tlf"
+                name="tlf"
+                length="9"
+                placeholder="Introduce teléfono..."
+                required
+            />
 
-            <label>
+            <label for="address">
                 Dirección:
                 <br />
-                <textarea name="address" cols="30" rows="3">
+                <textarea rows="2"
+                cols="30"
+                name="address"
+                wrap="hard"
+                placeholder="Tu Dirección...">
                 </textarea>
             </label>
 
@@ -87,3 +113,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>
